@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="stylee.css" />
+</head>
+<body>
+
+  <h1>Interactive Web Page Assignment</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section id="part1">
+    <h2>Part 1: Event Handling</h2>
+    <button id="greetBtn">Click me to Greet!</button>
+    <p id="greetMsg"></p>
+
+    <div id="colorBox" style="width:150px; height:150px; background:#88c; margin-top:20px;">
+      Hover over me to change my color
+    </div>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="part2">
+    <h2>Part 2: Interactive Elements</h2>
+    
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggleBtn">Toggle Light/Dark Mode</button>
+    
+    <!-- Counter Game -->
+    <div style="margin-top:20px;">
+      <button id="counterBtn">Click me!</button>
+      <p>Count: <span id="countDisplay">0</span></p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="part3">
+    <h2>Part 3: Form Validation</h2>
+    <form id="userForm" novalidate>
+      <label>
+        Name: <input type="text" id="name" name="name" />
+        <small class="error" id="nameError"></small>
+      </label><br />
+
+      <label>
+        Email: <input type="email" id="email" name="email" />
+        <small class="error" id="emailError"></small>
+      </label><br />
+
+      <label>
+        Password: <input type="password" id="password" name="password" />
+        <small class="error" id="passwordError"></small>
+      </label><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess" style="color:green; font-weight:bold;"></p>
+  </section>
+
+  <script src="sscript.js"></script>
+</body>
+</html>
